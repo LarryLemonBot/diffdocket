@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DiffDocket</title>
+    <meta
+      name="description"
+      content="DiffDocket turns a pull request into a clean maintainer receipt with file changes, risk notes, test gaps, and a release draft."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Maintainer tool</p>
+          <h1>DiffDocket</h1>
+          <p class="lede">
+            Turn a pull request into a structured review packet that is easy to scan,
+            easy to share, and hard to misread.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/LarryLemonBot/diffdocket">GitHub</a>
+            <a class="button secondary" href="https://github.com/LarryLemonBot/diffdocket#readme">README</a>
+          </div>
+        </div>
+
+        <aside class="panel">
+          <div class="panel-head">
+            <span>Sample receipt</span>
+            <span>Markdown</span>
+          </div>
+          <pre><code># DiffDocket Receipt
+- Risk level: medium
+- Changed files: src/app.py, tests/test_app.py
+- Test gap: none
+- Release note: source and test updates</code></pre>
+        </aside>
+      </section>
+
+      <section class="details">
+        <article>
+          <h2>What it does</h2>
+          <p>
+            DiffDocket reads a git diff, classifies the change set, and emits a concise
+            review receipt in Markdown or JSON. No external service is required.
+          </p>
+        </article>
+        <article>
+          <h2>Why it matters</h2>
+          <p>
+            Maintainers need a fast, repeatable way to see risk, tests, and release impact
+            before they merge.
+          </p>
+        </article>
+        <article>
+          <h2>Where it lives</h2>
+          <p>
+            Hosted on Vercel, source on GitHub, designed to stay public and easy to audit.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
+
